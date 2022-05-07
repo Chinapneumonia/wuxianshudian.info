@@ -1,0 +1,45 @@
+  A 主机记录
+   主域
+@ A 默认(必须的)  221.133.234.222
+@ A 中国联通 115.227.37.17
+@ A 中国电信 47.104.217.200
+@ A 中国移动 202.61.88.83
+   子域
+www A 默认(必须的)  221.133.234.222
+www A 中国联通 115.227.37.17
+www A 中国电信 47.104.217.200
+www A 中国移动 202.61.88.83
+          别名cname
+主域
+@ cname 默认  www.wuxianshudian.info
+@ cname 中国联通 tun.wuxianshudian.info
+@ cname 中国移动 tunnel.wuxianshudian.info
+@ cname 中国电信 dnstunnel.wuxianshudian.info
+子域
+www cname 默认  www.wuxianshudian.info
+www cname 中国联通 tun.wuxianshudian.info
+www cname 中国移动 tunnel.wuxianshudian.info
+www cname 中国电信 dnstunnel.wuxianshudian.info
+
+            mx(邮件交换记录)
+主域
+@ mx 5 默认  www.wuxianshudian.info
+@ mx 10 中国联通 tun.wuxianshudian.info
+@ mx 15 中国移动 tunnel.wuxianshudia.info
+@ mx 20 中国电信 dnstunnel.wuxianshudian.info
+子域
+www mx 5 默认  www.wuxianshudian.info
+www mx 10 中国联通 tun.wuxianshudian.info
+www mx 15 中国移动 tunnel.wuxianshudian.info
+www mx 20 中国电信 dnstunnel.wuxianshudian.info
+               TXT记录
+主域
+@ TXT 默认  www.wuxianshudian.info
+@ TXT 中国联通 tun.wuxianshudian.info
+@ TXT 中国移动 tunnel.wuxianshudian.info
+@ TXT 中国电信 dnstunnel.wuxianshudian.info
+子域
+www TXT 默认  www.wuxianshudian.info
+www TXT 中国联通 tun.wuxianshudian.info
+www TXT 中国移动 tunnel.wuxianshudian.info
+www TXT 中国电信 dnstunnel.wuxianshudian.info
